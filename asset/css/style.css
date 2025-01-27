@@ -75,6 +75,11 @@ header {
 
     h2 {
         color: var(--gb-primary-darker);
+        font-size: 35px;
+
+        span {
+            display: none;
+        }
     }
 }
 
@@ -92,9 +97,28 @@ header {
             padding-left: 1rem;
         }
     }
+
+    .page-title {
+        padding-top: 2rem;
+
+        h2 {
+            font-size: 40px;
+
+            span {
+                display: inline-block;
+            }
+        }
+    }
 }
 
-@media screen and (min-width: 992px) {}
+@media screen and (min-width: 992px) {
+
+    .page-title {
+        h2 {
+            font-size: 64px;
+        }
+    }
+}
 
 
 /* #endregion responsive*/
