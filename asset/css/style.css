@@ -265,6 +265,34 @@ header {
     display: none;
 }
 
+.recipe-presentation {
+
+    .container {
+        h2 {
+            text-transform: uppercase;
+            padding: 0.5rem 0;
+        }
+
+        hr {
+            color: var(--gb-primary-color);
+            width: 15%;
+            border: 2px solid var(--gb-primary-color);
+            margin-bottom: 1rem;
+        }
+
+        .figure {
+            width: 380px;
+            height: 250px;
+            margin: 0 auto;
+        }
+
+        p {
+            padding-top: 1rem;
+            line-height: 2rem;
+        }
+    }
+}
+
 /* #endregion main*/
 
 
@@ -380,114 +408,137 @@ header {
     .banner {
         display: inline-block;
     }
-}
 
-@media screen and (min-width: 992px) {
+    .recipe-presentation {
 
-    /* #region collum*/
+        .container {
 
-    .col-l-1 {
-        width: calc(100% / 12 * 1);
-    }
+            hr {
+                border: 3px solid var(--gb-primary-color);
+            }
 
-    .col-l-2 {
-        width: calc(100% / 12 * 2);
-    }
-
-    .col-l-3 {
-        width: calc(100% / 12 * 3);
-    }
-
-    .col-l-4 {
-        width: calc(100% / 12 * 4);
-
-    }
-
-    .col-l-5 {
-        width: calc(100% / 12 * 5);
-    }
-
-
-    .col-l-6 {
-        width: 50%;
-    }
-
-    .col-l-7 {
-        width: calc(100% / 12 * 7);
-
-    }
-
-    .col-l-8 {
-        width: calc(100% / 12 * 8);
-
-    }
-
-    .col-l-9 {
-        width: calc(100% / 12 * 9);
-
-    }
-
-    .col-l-10 {
-        width: calc(100% / 12 * 10);
-
-    }
-
-    .col-l-11 {
-        width: calc(100% / 12 * 11);
-
-    }
-
-    .col-l-12 {
-        width: 100%;
-    }
-
-    /* #endregion collum*/
-
-
-    .page-title {
-        h2 {
-            font-size: 50px;
-
-            span {
-                display: inline-block;
+            .figure {
+                float: left;
+                margin-right: 1rem;
             }
         }
     }
 
-    .container {
-        width: 80%;
-        margin: auto;
-    }
+    @media screen and (min-width: 992px) {
 
-    .recipe-preview {
-        .recipe-description {
-            margin: 0;
-            padding: 1rem;
+        /* #region collum*/
 
-            ul {
-                display: inline-block;
+        .col-l-1 {
+            width: calc(100% / 12 * 1);
+        }
+
+        .col-l-2 {
+            width: calc(100% / 12 * 2);
+        }
+
+        .col-l-3 {
+            width: calc(100% / 12 * 3);
+        }
+
+        .col-l-4 {
+            width: calc(100% / 12 * 4);
+
+        }
+
+        .col-l-5 {
+            width: calc(100% / 12 * 5);
+        }
+
+
+        .col-l-6 {
+            width: 50%;
+        }
+
+        .col-l-7 {
+            width: calc(100% / 12 * 7);
+
+        }
+
+        .col-l-8 {
+            width: calc(100% / 12 * 8);
+
+        }
+
+        .col-l-9 {
+            width: calc(100% / 12 * 9);
+
+        }
+
+        .col-l-10 {
+            width: calc(100% / 12 * 10);
+
+        }
+
+        .col-l-11 {
+            width: calc(100% / 12 * 11);
+
+        }
+
+        .col-l-12 {
+            width: 100%;
+        }
+
+        /* #endregion collum*/
+
+
+        .page-title {
+            h2 {
+                font-size: 50px;
+
+                span {
+                    display: inline-block;
+                }
             }
         }
-    }
 
-    .social {
-        .row {
-            .col {
-                .btn {
-                    padding: 0.6rem 2rem;
+        .container {
+            width: 80%;
+            margin: auto;
+        }
 
-                    font-size: 12px;
+        .recipe-preview {
+            .recipe-description {
+                margin: 0;
+                padding: 1rem;
 
-                    span {
-                        display: inline-block;
-                        font-weight: 800;
-                        text-transform: uppercase;
+                ul {
+                    display: inline-block;
+                }
+            }
+        }
+
+        .social {
+            .row {
+                .col {
+                    .btn {
+                        padding: 0.6rem 2rem;
+
+                        font-size: 12px;
+
+                        span {
+                            display: inline-block;
+                            font-weight: 800;
+                            text-transform: uppercase;
+                        }
                     }
                 }
             }
         }
+
+        .recipe-presentation {
+
+            .container {
+                hr {
+                    border: 4px solid var(--gb-primary-color);
+                }
+            }
+        }
     }
-}
 
 
-/* #endregion responsive*/
+    /* #endregion responsive*/
