@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Montserrat, 'Helvetica Neue', sans-serif;
 }
 
 :root {
@@ -18,6 +19,18 @@
 
 .debug {
 
+    .container {
+        min-height: 100%;
+    }
+
+    .row {
+        min-height: 100%;
+    }
+
+    [class*="col"] {
+        min-height: 100%;
+    }
+
     header {
         background-color: var(--gb-primary-darker);
     }
@@ -29,10 +42,29 @@
     .page-title {
         background-color: var(--gb-primary-color);
     }
+
+    .recipe-preview {
+        background-color: var(--bg-seconday-dark);
+        min-height: 150px;
+    }
+
+    .video {
+        background-color: var(--gb-primary-color);
+        min-height: 100px;
+    }
+
+    .recipe-description {
+        background-color: var(--gb-primary-lighter);
+        min-height: 100px;
+    }
 }
 
 body {
     background-color: var(--gb-primary-light);
+
+    img {
+        width: 100%;
+    }
 }
 
 /* #endregion communs*/
@@ -40,8 +72,83 @@ body {
 /* #region utily*/
 
 .container {
-    padding: 1rem 2rem;
+    padding: 0 1rem;
 }
+
+.unstyle {
+    list-style: none;
+}
+
+/* #region row&collum*/
+
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -1rem;
+}
+
+[class*="col-"] {
+    padding: 1rem;
+}
+
+.col-1 {
+    width: calc(100% / 12 * 1);
+}
+
+.col-2 {
+    width: calc(100% / 12 * 2);
+}
+
+.col-3 {
+    width: calc(100% / 12 * 3);
+}
+
+.col-4 {
+    width: calc(100% / 12 * 4);
+
+}
+
+.col-5 {
+    width: calc(100% / 12 * 5);
+}
+
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: calc(100% / 12 * 7);
+
+}
+
+.col-8 {
+    width: calc(100% / 12 * 8);
+
+}
+
+.col-9 {
+    width: calc(100% / 12 * 9);
+
+}
+
+.col-10 {
+    width: calc(100% / 12 * 10);
+
+}
+
+.col-11 {
+    width: calc(100% / 12 * 11);
+
+}
+
+.col-12 {
+    width: 100%;
+}
+
+/* #endregion row&collum*/
+
 
 /* #endregion utily*/
 
@@ -54,7 +161,7 @@ header {
         font-family: 'Nerko One', cursive;
         text-transform: uppercase;
         font-weight: 600;
-        font-size: 50px;
+        font-size: 60px;
         color: var(--gb-primary-color);
         text-align: center;
         padding: 0.5rem;
@@ -66,6 +173,8 @@ header {
 /* #region main*/
 
 .page-title {
+
+    padding-top: 1rem;
 
     h5 {
         color: var(--bg-seconday-dark);
@@ -79,6 +188,18 @@ header {
 
         span {
             display: none;
+        }
+    }
+}
+
+.recipe-preview {
+    .recipe-description {
+        ul {
+            padding: 1rem 0;
+
+            li {
+                padding: 0.5rem 0;
+            }
         }
     }
 }
@@ -99,7 +220,7 @@ header {
     }
 
     .page-title {
-        padding-top: 2rem;
+        padding-top: 3rem;
 
         h2 {
             font-size: 40px;
@@ -109,14 +230,29 @@ header {
             }
         }
     }
+
+    .container {
+        width: 90%;
+        margin: auto;
+    }
 }
 
 @media screen and (min-width: 992px) {
 
     .page-title {
         h2 {
-            font-size: 64px;
+            font-size: 50px;
+
+            span {
+                display: inline-block;
+            }
         }
+    }
+
+    .container {
+        width: 80%;
+        margin: auto;
+
     }
 }
 
