@@ -99,7 +99,6 @@ body {
 .col {
     width: auto;
     flex-basis: auto;
-    flex-grow: 1;
 }
 
 .col-1 {
@@ -225,10 +224,7 @@ header {
         justify-content: space-between;
 
         .col {
-
             .btn {
-
-
                 span {
                     display: none;
                 }
