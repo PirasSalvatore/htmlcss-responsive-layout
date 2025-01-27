@@ -16,6 +16,11 @@
     --gb-primary-color: #ff9614;
     --bg-seconday-dark: #c3bdb6;
     --bg-secondary-darker: black;
+    --bg-social-facebook: #1e7af3;
+    --bg-social-twitter: #009eff;
+    --bg-social-instagram: #df55a5;
+    --bg-social-pinterest: #e62324;
+    --bg-social-youtube: #e62222;
 }
 
 .debug {
@@ -224,12 +229,35 @@ header {
         justify-content: space-between;
 
         .col {
+
             .btn {
                 span {
                     display: none;
                 }
             }
         }
+
+        .col:nth-child(1) .btn i {
+            color: var(--bg-social-facebook);
+
+        }
+
+        .col:nth-child(2) .btn i {
+            color: var(--bg-social-twitter);
+        }
+
+        .col:nth-child(3) .btn i {
+            color: var(--bg-social-instagram);
+        }
+
+        .col:nth-child(4) .btn i {
+            color: var(--bg-social-pinterest);
+        }
+
+        .col:nth-child(5) .btn i {
+            color: var(--bg-social-youtube);
+        }
+
     }
 }
 
@@ -340,6 +368,10 @@ header {
             }
         }
     }
+
+    .btn {
+        padding: 0.5rem 4rem;
+    }
 }
 
 @media screen and (min-width: 992px) {
@@ -426,6 +458,24 @@ header {
 
             ul {
                 display: inline-block;
+            }
+        }
+    }
+
+    .social {
+        .row {
+            .col {
+                .btn {
+                    padding: 0.6rem 2rem;
+
+                    font-size: 12px;
+
+                    span {
+                        display: inline-block;
+                        font-weight: 800;
+                        text-transform: uppercase;
+                    }
+                }
             }
         }
     }
